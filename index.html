@@ -10,22 +10,22 @@
     <link rel="stylesheet" href="style.css">
     <title>Apple | India</title>
 </head>
-
 <body>
+<input type="checkbox" id='click'>
     <nav>
-
         <ul class='navbar mini'>
             <div class="lines">
-                <div class="line one"></div>
-                <div class="line two"></div>
+                <label for="click">
+                    <div class="line one"></div>
+                    <div class="line two"></div>
+                </label>
             </div>
             <li><a href="#"><i class="fab fa-apple apple-large"></i></a></li>
             <li><a href="#"><i class="fal fa-shopping-cart cart-small"></i></a></li>
         </ul>
-
-
         <ul class="navbar big">
-            <li><a href="#"><i class="fab fa-apple"></i></a></li>
+            <input class='search' type="search" placeholder='Search apple.com/in'>
+            <li class='hide'><a href="#"><i class="fab fa-apple"></i></a></li>
             <li><a href="#">Store</a></li>
             <li><a href="#">Mac</a></li>
             <li><a href="#">iPad</a></li>
@@ -34,8 +34,8 @@
             <li><a href="#">TV</a></li>
             <li><a href="#">Music</a></li>
             <li><a href="#">Support</a></li>
-            <li><a href="#"><i class="fal fa-search"></i></a></li>
-            <li><a href="#"><i class="fal fa-shopping-cart"></i></a></li>
+            <li class='hide small-text'><a href="#"><i class="fal fa-search"></i></a></li>
+            <li class='hide small-text'><a href="#"><i class="fal fa-shopping-cart"></i></a></li>
         </ul>
     </nav>
     <p>Shop now at the Apple&nbsp;Store online with many great ways to buy. Get free, no-contact delivery,
@@ -48,11 +48,7 @@
             <div class="homelinks"><a href="#">Learn more ></a><a href="#">Buy ></a></div>
         </div>
         <div class="image">
-            <!-- <picture> -->
-            <!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
-            <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
             <img src="assets/img/iphone12.png">
-            <!-- </picture> -->
         </div>
     </div>
     <div class="section black">
@@ -63,11 +59,7 @@
             <div class="homelinks"><a href="#">Learn more ></a><a href="#">Buy ></a></div>
         </div>
         <div class="image bigger">
-            <!-- <picture> -->
-            <!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
-            <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
             <img src="assets/img/iphone12pro.jpg">
-            <!-- </picture> -->
         </div>
     </div>
     <div class="section black">
@@ -77,11 +69,7 @@
             <div class="homelinks spacing"><a href="#">Learn more ></a><a href="#">Buy ></a></div>
         </div>
         <div class="image bigger">
-            <!-- <picture> -->
-            <!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
-            <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
             <img src="assets/img/ipadpro.jpg">
-            <!-- </picture> -->
         </div>
     </div>
     <div class="row">
@@ -91,11 +79,7 @@
                 <a href="#">Save with education pricing ></a>
             </div>
             <div class="image backtoschool">
-                <!-- <picture> -->
-                <!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
-                <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
                 <img src="assets/img/backtoschool.png">
-                <!-- </picture> -->
             </div>
         </div>
         <div class="section black">
@@ -105,11 +89,7 @@
                 <div class="homelinks spacing"><a href="#">Learn more ></a><a href="#">Buy ></a></div>
             </div>
             <div class="image watch">
-                <!-- <picture> -->
-                <!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
-                <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
                 <img src="assets/img/watch.jpg">
-                <!-- </picture> -->
             </div>
         </div>
         <div class="section">
@@ -119,11 +99,7 @@
                 <div class="homelinks spacing"><a href="#">Learn more ></a><a href="#">Buy ></a></div>
             </div>
             <div class="image small">
-                <!-- <picture> -->
-                <!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
-                <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
                 <img src="assets/img/mac.jpg">
-                <!-- </picture> -->
             </div>
         </div>
         <div class="section">
@@ -133,11 +109,7 @@
                 <div class="homelinks spacing"><a href="#">Learn more ></a><a href="#">Buy ></a></div>
             </div>
             <div style="bottom: 0;" class="image">
-                <!-- <picture> -->
-                <!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
-                <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
                 <img src="assets/img/airtag.jpg">
-                <!-- </picture> -->
             </div>
         </div>
         <div class="section music tv">
@@ -179,11 +151,11 @@
             months
             after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms
             apply.
-            <!-- <hr> -->
             <div class="columns">
+                <input type="checkbox" id='expand1'>
                 <div class="column">
-                    <b>Shop and Learn</b>
-                    <ul>
+                    <label for="expand1"><b>Shop and Learn<p>+</p></b></label>
+                    <ul class='expand'>
                         <li>Mac</li>
                         <li>iPad</li>
                         <li>iPhone</li>
@@ -197,9 +169,10 @@
                         <li>Accessories</li>
                     </ul>
                 </div>
+                <input type="checkbox" id='expand2'>
                 <div class="column">
-                    <b>Services</b>
-                    <ul>
+                    <label for="expand2"><b>Services<p>+</p></b></label>
+                    <ul class='expand'>
                         <li>Apple Music</li>
                         <li>Apple TV+</li>
                         <li>Apple Arcade</li>
@@ -214,9 +187,10 @@
                         <li>iCloud.com</li>
                     </ul>
                 </div>
+                <input type="checkbox" id='expand3'>
                 <div class="column">
-                    <b>Apple Store</b>
-                    <ul>
+                    <label for="expand3"><b>Apple Store<p>+</p></b></label>
+                    <ul class='expand'>
                         <li>Shop Online</li>
                         <li>Ways to Buy</li>
                         <li>Apple Trade In</li>
@@ -225,9 +199,10 @@
                         <li>Shopping Help</li>
                     </ul>
                 </div>
+                <input type="checkbox" id='expand4'>
                 <div class="column">
-                    <b>For Business</b>
-                    <ul>
+                    <label for='expand4'><b>For Business<p>+</p></b></label>
+                    <ul class='expand'>
                         <li>Apple and Business</li>
                         <li>For Education</li>
                         <li>Apple and Education</li>
@@ -238,9 +213,10 @@
                         <li>Health on Apple Watch</li>
                     </ul>
                 </div>
+                <input type="checkbox" id='expand5'>
                 <div class="column">
-                    <b>Apple Values</b>
-                    <ul>
+                    <label for='expand5'><b>Apple Values<p>+</p></b></label>
+                    <ul class='expand'>
                         <li>Accessibility</li>
                         <li>Environment</li>
                         <li>Privacy</li>
@@ -257,16 +233,15 @@
                 </div>
             </div>
             <li>More ways to shop: Find a retailer near you. Or call 000800 040 1966.</li>
-            <!-- <hr> -->
             <div class="columns">
                 <div>
                     Copyright © 2021 Apple Inc. All rights reserved.
-                    <span>
+                    <div>
                         <span class='dark'>Privacy Policy</span>&nbsp;|&nbsp;
                         <span class='dark'>Terms of Use</span>&nbsp;|&nbsp;
                         <span class='dark'>Sales Policy</span>&nbsp;|&nbsp;
                         <span class='dark'>Legal</span>&nbsp;|&nbsp;
-                        <span class='dark'>Site&nbsp;Map</span></span>
+                        <span class='dark'>Site&nbsp;Map</span></div>
                 </div>
                 India
             </div>
