@@ -347,6 +347,7 @@ input:checked+nav .lines .two {
 
 .search {
     width: 90%;
+    display:none;
     border: none;
     outline: none;
     background-color: rgb(75, 75, 75);
